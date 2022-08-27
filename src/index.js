@@ -1,5 +1,11 @@
-import React from 'react'
-import ReactBom from 'react-dom'
-import App from './components/App'
+import ReactBom from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-ReactBom.render(<App />, document.getElementById('root'))
+import App from './components/App';
+
+ReactBom.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root'),
+);

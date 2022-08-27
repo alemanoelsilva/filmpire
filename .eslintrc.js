@@ -9,8 +9,11 @@ module.exports = {
   ],
   overrides: [
   ],
+  ecmaFeatures: {
+    jsx: true,
+  },
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: 12,
     sourceType: 'module',
   },
   plugins: [
@@ -53,8 +56,8 @@ module.exports = {
     'react/jsx-filename-extension': 0,
     'react/jsx-one-expression-per-line': 0,
     'react/function-component-definition': [2, {
-      'namedComponents': 'arrow-function',
-      'unnamedComponents': 'arrow-function' | Array<'arrow-function'>
+      namedComponents: 'arrow-function',
+      unnamedComponents: 'arrow-function',
     }],
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/alt-text': 0,
