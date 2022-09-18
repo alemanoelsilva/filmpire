@@ -1,0 +1,25 @@
+import { makeStyles } from '@mui/styles';
+
+export default makeStyles((theme) => ({
+  image: {
+    maxWidth: '90%',
+    borderRadius: '20px',
+    objectFit: 'cover',
+    boxShadow: '0.5em 0.5em 1em',
+  },
+  details: {
+    // display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column',
+  },
+  buttonsContainer: {
+    marginTop: '2rem',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    width: '100%',
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column',
+    },
+  },
+}));
